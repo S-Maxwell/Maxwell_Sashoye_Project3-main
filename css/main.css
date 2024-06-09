@@ -1,39 +1,96 @@
 .hidden { 
-    display: none;
+   display: none;
 }
 
 /* 
-    CSS Guide 
+   CSS Guide 
 
-    /* 1. ---General Styles--- */
+   /* 1. ---General Styles--- */
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: Poppins, sans-serif;
- }
- 
- .spacer { 
-    margin-top: 10px; 
- }
- 
- /* 2. ---General rules - scales images, videos to size of container--- */
- img, embed, object, video, picture {
-    max-width: 100%; 
-  }
- 
- p, h1, h2, h3, h4, h5 {
-    margin: 0px; 
-    padding: 0px;
- }
- 
- a {
-    text-decoration: none;
-    transition: all .5s ease-in-out;
- }
- 
- input, textarea {
-    display: block;
-    margin: 0;
-    padding: 0;
- }
+   margin: 0px;
+   padding: 0px;
+   font-family: Poppins, sans-serif;
+   box-sizing: border-box;
+}
+
+.spacer { 
+   margin-top: 10px; 
+}
+
+/* 2. ---General rules - scales images, videos to size of container--- */
+img, embed, object, video, picture {
+ max-width: 100%; 
+}
+
+header, footer {
+background-color: #f4f4f4;
+text-align: center;
+padding: 1px;
+}
+
+p, h1, h2, h3, h4, h5 {
+ margin: 0px; 
+ padding: 0px;
+}
+
+a {
+ text-decoration: none;
+ transition: all .5s ease-in-out;
+}
+
+input, textarea {
+ display: block;
+ margin: 0;
+ padding: 0;
+}
+
+/* 2. ---Mobile Library Grid Styles--- */
+
+#image { 
+ display: none;
+}
+.object { 
+ height: 150px;
+}
+#hero { 
+ height: 250px;
+}
+#footer { 
+ height: 100px;
+}
+
+
+/* 3. ---Tablet Library Grid Styles--- */
+
+@media screen and (min-width: 768px) {
+
+#object {
+   height: 150px;
+}
+#hero {
+   height: 300px;
+}
+#footer {
+ height: 100px;
+}
+}
+
+
+/* 4. ---Desktop Library Grid Styles--- */
+
+@media screen and (min-width: 1200px) {
+
+#image {
+ display: inline-block;
+}
+.object {
+   height: 200px;
+}
+#hero {
+ height: 370px;
+}
+#footer { 
+ height: 150px;
+}
+}
