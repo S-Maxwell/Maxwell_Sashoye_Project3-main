@@ -2,3 +2,38 @@
     display: none;
 }
 
+/* 
+    CSS Guide 
+
+    /* 1. ---General Styles--- */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins, sans-serif;
+ }
+ 
+ .spacer { 
+    margin-top: 10px; 
+ }
+ 
+ /* 2. ---General rules - scales images, videos to size of container--- */
+ img, embed, object, video, picture {
+    max-width: 100%; 
+  }
+ 
+ p, h1, h2, h3, h4, h5 {
+    margin: 0px; 
+    padding: 0px;
+ }
+ 
+ a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+ }
+ 
+ input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
