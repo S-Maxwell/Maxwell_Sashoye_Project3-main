@@ -45,10 +45,10 @@
   
    .grid-con {
     display: grid; 
-    grid-template-columns: repeat(4,minimax(0, 1fr));
-    grid-column-gap: 30px; 
-    max-width: 767px; 
-    margin: 0 auto; 
+    grid-template-columns: repeat(2,minimax(0, 1fr));
+    grid-column-gap: 30px;
+    max-width: 767px;
+    margin: 0 auto;
     padding-left: 15px; 
     padding-right: 15px; 
    }
